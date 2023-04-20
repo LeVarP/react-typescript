@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.div_loader{
+    width: 100%;
+    height: 100vh;
+    /* margin: 25vh 45%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(237, 255, 218, 0.834);
+    z-index: 1;
+}
+
+.circle_loader {
+    width: 64px;
+    height: 64px;
+    border-left: 8px solid;
+    border-color: #08f677;
+    border-radius: 100%;
+    animation: spin-anim .4s infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
